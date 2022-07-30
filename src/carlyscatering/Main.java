@@ -17,10 +17,10 @@ public class Main {
     public static void main(String[] args) {
         // Calling Methods
         carlysMotto();
-        eventprice();
+        eventPrice();
     }
 
-    public static void eventprice() {
+    public static void eventPrice() {
         System.out.print("Number of guests:\t");
         no_of_guests = input.nextInt();
         System.out.println("Number of guest is:\t" + no_of_guests);

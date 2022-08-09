@@ -17,18 +17,25 @@ public class Main {
     public static void main(String[] args) {
         // Calling Methods
         carlysMotto();
+        guestAmount();
         eventPrice();
     }
 
-    public static void eventPrice() {
-        System.out.print("Number of guests:\t");
-        no_of_guests = input.nextInt();
+    private static void eventPrice() {
         System.out.println("Number of guest is:\t" + no_of_guests);
         System.out.println("Price per guest is:\t" + price_per_guest);
+        // Calculates the price of the event
         total_price = no_of_guests * price_per_guest;
-        System.out.println("Total price is:\t\t" + total_price);
+        System.out.println("Total price for the event is:\t" + total_price);
+        // Checks if the event is large
         large_event = no_of_guests >= 50;
         System.out.println("Is this event large?\t" + large_event);
+    }
+
+    public static int guestAmount() {
+        System.out.print("Number of guests:\t");
+        no_of_guests = input.nextInt();
+        return no_of_guests;
     }
 
     public static void carlysMotto() {

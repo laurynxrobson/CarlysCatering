@@ -29,7 +29,14 @@ public class Event {
       return this.price;
    }
 
-   // public void setPrice(double price) {
-   // this.price = price;
-   // }
+   public Event(String event_number, int guests) {
+      this.event_number = event_number;
+      this.guests = guests;
+   }
+
+   public Event(int guests) {
+      this.event_number = "A000";
+      this.guests = guests;
+   }
+
 }
